@@ -6,4 +6,4 @@ http, REST, JSP and many more web related contents.
 -> This lab assignment was easy. It took me around and hour to finish the assignment. With previous experience
 with git and github, I found it relatively easy to publish the github page. However, after publishing the 
 assignment and rechecking, I found that the html validator was not working even doing the same as instructed. 
-It says, no referrer header found.
+It says, no referrer header found. Here's the link to the github: https://sagarnepali.github.io/WAP/
