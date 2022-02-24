@@ -1,0 +1,33 @@
+body {
+  background-color: grey;
+}
+
+h1,
+h2 {
+  color: darkslategrey;
+  text-decoration: wavy;
+  font-weight: bolder;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p q {
+  font-style: italic;
+  font-weight: bold;
+  color: yellow;
+}
+
+li {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.movie-desc {
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.red {
+  color: red;
+}

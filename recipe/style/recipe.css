@@ -1,0 +1,51 @@
+h1,
+h2,
+h3 {
+  font-family: Lucida Sans Unicode, Helvetica, Arial, sans-serif;
+  text-decoration: underline;
+}
+
+.textWithBgColor {
+  background-color: rgb(240, 240, 240);
+  color: rgb(164, 164, 0);
+}
+
+blockquote {
+  background-color: yellowgreen;
+}
+
+body > h1 {
+  text-align: center;
+  font-weight: 22pt bold;
+}
+
+body > h2,
+h3 {
+  font-weight: 18pt normal;
+  text-align: left;
+}
+
+body {
+  background-color: white;
+  background-image: url("../images/silverware.jpg");
+  background-attachment: fixed;
+  color: rgb(64, 64, 64);
+  font-weight: 14pt;
+  font-family: Georgia, Garamond, sans-serif;
+}
+
+a {
+  color: rgb(164, 164, 0);
+}
+
+ul {
+  list-style-image: url("../images/pie_icon.gif");
+}
+
+.makeItBold {
+  font-weight: bold;
+}
+
+.userQuote {
+  font-style: italic;
+}
