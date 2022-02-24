@@ -4,5 +4,7 @@ In those periods, I have been able to be aware of Web servers, clients, servers,
 http, REST, JSP and many more web related contents.
 
 -> About me page was easy and did it quickly. But took some time to do advance topics of the recipe. Had 
-to google few things like adding favicon, with icon for <li> tags.
+to google few things like adding favicon, with icon for <li> tags. Nesting unordered list inside ordered 
+list seemed easy but with validator, an error was shown. When an empty li was uses to wrap the ul inside 
+ol and doing the li visibility to none;
  Here's the link to the github: https://sagarnepali.github.io/WAP/
