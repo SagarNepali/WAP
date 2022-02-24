@@ -2,6 +2,14 @@ body {
   background-color: grey;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 h1,
 h2 {
   color: darkslategrey;
@@ -11,12 +19,22 @@ h2 {
 
 p {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 p q {
   font-style: italic;
   font-weight: bold;
   color: yellow;
+}
+
+p::first-letter {
+  font-size: 150%;
+}
+
+dt {
+  font-style: italic;
+  color: yellowgreen;
 }
 
 li {
