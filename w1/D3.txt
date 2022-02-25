@@ -6,5 +6,6 @@ http, REST, JSP and many more web related contents.
 -> About me page was easy and did it quickly. But took some time to do advance topics of the recipe. Had 
 to google few things like adding favicon, with icon for <li> tags. Nesting unordered list inside ordered 
 list seemed easy but with validator, an error was shown. When an empty li was uses to wrap the ul inside 
-ol and doing the li visibility to none;
+ol and doing the li visibility to none. Tried all extra options. However I cannot make the paragraph look 
+reversed when hover.
  Here's the link to the github: https://sagarnepali.github.io/WAP/
