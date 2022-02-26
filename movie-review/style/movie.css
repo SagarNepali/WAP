@@ -28,6 +28,15 @@ body {
   position: relative;
   text-align: center;
 }
+.user {
+  margin-top: 8px;
+  font-size: 8pt;
+}
+
+.user span::after {
+  content: "\a";
+  white-space: pre;
+}
 
 .leftSection {
   width: 550px;
@@ -85,6 +94,13 @@ body {
   height: 100%;
 }
 
+.bar {
+  width: 100%;
+  text-align: center;
+  background-color: #a2b964;
+  margin: 0;
+}
+
 dt {
   font-size: 10pt;
   font-weight: bold;
@@ -95,4 +111,9 @@ dt {
 dd {
   text-align: left;
   padding-left: 10%;
+}
+
+dd ul li {
+  list-style-type: none;
+  text-align: left;
 }
