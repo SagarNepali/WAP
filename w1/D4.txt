@@ -1,0 +1,10 @@
+Hi, I am Sagar Nepali. In my undergraduate, I studied Web Technology in my fourth semester (2013). 
+After my undergraduate, I was working as a java developer and had to modify the JSP as and when required. 
+In those periods, I have been able to be aware of Web servers, clients, servers, javascript, jquery, ajax,
+http, REST, JSP and many more web related contents.
+
+-> For this movie-review web page, I find it hard to make the columns and things to show up in its own position
+like review boxes, general overview, page information and banners as well. In comparision to previous assignments,
+this is quite hard as we are not using any CSS frameworks as well as other grids or flexbox for alignments. As most 
+parts are completed in this assignments, few formatting things still remaining. Like, user information in review box.
+ Here's the link to the github: https://sagarnepali.github.io/WAP/moview-review/tmnt.html
