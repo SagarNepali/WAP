@@ -84,95 +84,106 @@
     <br />
     <br />
     <div class="form2 container">
-      <legend>New Product Form</legend>
-      <form method="get" action="./success.html">
-        <div class="row">
-          <div class="col">
-            <div class="form-group">
-              <label for="product-no">Product Number</label>
-              <input
-                type="number"
-                class="form-control"
-                id="product-no"
-                name="product_no"
-                required
-              />
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#"
+          >MUM Golden Dome Market : : : SRM System | Products | Suppliers</a
+        >
+        <div style="float: right; padding: 0px 10px; display: table-cell">
+          <span>Hello!</span>
+          <span class="btn btn-primary">Log out</span>
+        </div>
+      </nav>
+      <fieldset>
+        <legend>New Product Form</legend>
+        <form method="get" action="./success.html">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="product-no">Product Number</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="product-no"
+                  name="product_no"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="product-no">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="control-label" for="unit-price">Unit Price</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  id="unit-price"
+                  name="unit_price"
+                  placeholder="0.0"
+                  required
+                />
+              </div>
             </div>
-            <div class="form-group">
-              <label for="product-no">Name</label>
-              <input
-                type="text"
-                class="form-control"
-                id="name"
-                name="name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label class="control-label" for="unit-price">Unit Price</label>
-              <input
-                type="number"
-                step="0.01"
-                class="form-control"
-                id="unit-price"
-                name="unit_price"
-                placeholder="0.0"
-                required
-              />
-            </div>
-          </div>
-          <!--Left Column-->
-          <div class="col">
-            <div class="form-group">
-              <label for="quantity">Quantity in stock</label>
-              <input
-                type="number"
-                class="form-control"
-                id="quantity"
-                name="quantity"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="supplier">Supplier: </label>
-              <select class="form-select">
-                <option selected>Select a supplier</option>
-                <option id="supplier">1</option>
-                <option id="supplier">12</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="date-supplied">Date supplied</label>
-              <input
-                type="date"
-                class="form-control"
-                id="date-supplied"
-                name="date_supplied"
-                required
-              />
-              <small id="dateSuppledHelp" class="form-text text-muted"
-                >Enter a valid Date</small
-              >
-            </div>
-            <div class="pull-right">
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <div class="col-md-4">
-                  <button type="reset" class="btn btn-primary">Reset</button>
-                </div>
-                <div class="col-md-4">
-                  <button type="reset" class="btn btn-danger">Cancel</button>
-                </div>
-                <div class="col-md-6">
-                  <button type="submit" class="btn btn-success">
-                    Add product
-                  </button>
+            <!--Left Column-->
+            <div class="col">
+              <div class="form-group">
+                <label for="quantity">Quantity in stock</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity"
+                  name="quantity"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="supplier">Supplier: </label>
+                <select class="form-select" id="supplier">
+                  <option selected>Select a supplier</option>
+                  <option>1</option>
+                  <option>12</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="date-supplied">Date supplied</label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="date-supplied"
+                  name="date_supplied"
+                  required
+                />
+                <small id="dateSuppledHelp" class="form-text text-muted"
+                  >Enter a valid Date</small
+                >
+              </div>
+              <div class="pull-right">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <div class="col-md-4">
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                  </div>
+                  <div class="col-md-4">
+                    <button type="reset" class="btn btn-danger">Cancel</button>
+                  </div>
+                  <div class="col-md-6">
+                    <button type="submit" class="btn btn-success">
+                      Add product
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
+            <!--Right Column-->
           </div>
-          <!--Right Column-->
-        </div>
-      </form>
+        </form>
+      </fieldset>
     </div>
     <footer style="position: fixed; bottom: 0">
       <p>
