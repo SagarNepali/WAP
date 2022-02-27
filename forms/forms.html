@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="form1 container">
+      <div class="row col-6">
+        <fieldset style="bottom: black 1px">
+          <legend>Form1</legend>
+          <form method="get" action="./success.html">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                name="email"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="exampleInputPassword1"
+                placeholder="Password"
+                name="password"
+                pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{10,}$"
+                oninvalid="this.setCustomValidity('Password must be 10 character with at least one number and uppercase letter')"
+              />
+            </div>
+            <br />
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="check_out"
+                id="check-out"
+              />
+              <label class="form-check-label" for="exampleCheck1"
+                >Check me out</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+    <br />
+    <br />
+    <div class="form2 container">
+      <legend>New Product Form</legend>
+      <form method="get" action="./success.html">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="product-no">Product Number</label>
+              <input
+                type="number"
+                class="form-control"
+                id="product-no"
+                name="product_no"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="product-no">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label class="control-label" for="unit-price">Unit Price</label>
+              <input
+                type="number"
+                step="0.01"
+                class="form-control"
+                id="unit-price"
+                name="unit_price"
+                placeholder="0.0"
+                required
+              />
+            </div>
+          </div>
+          <!--Left Column-->
+          <div class="col">
+            <div class="form-group">
+              <label for="quantity">Quantity in stock</label>
+              <input
+                type="number"
+                class="form-control"
+                id="quantity"
+                name="quantity"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="supplier">Supplier: </label>
+              <select class="form-select">
+                <option selected>Select a supplier</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="date-supplied">Date supplied</label>
+              <input
+                type="date"
+                class="form-control"
+                id="date-supplied"
+                name="date_supplied"
+                placeholder="yyyy-mm-dd"
+                required
+              />
+              <small id="dateSuppledHelp" class="form-text text-muted"
+                >Enter a valid Date</small
+              >
+            </div>
+            <div class="pull-right">
+              <div class="btn-group" role="group" aria-label="Basic example">
+                <div class="col-md-4">
+                  <button type="reset" class="btn btn-primary">Reset</button>
+                </div>
+                <div class="col-md-4">
+                  <button type="reset" class="btn btn-danger">Cancel</button>
+                </div>
+                <div class="col-md-6">
+                  <button type="submit" class="btn btn-success">
+                    Add product
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--Right Column-->
+        </div>
+      </form>
+    </div>
+    <footer style="position: fixed; bottom: 0">
+      <p>
+        <a
+          href="https://validator.w3.org/nu/?doc=http://sagarnepali.github.io/WAP/forms/forms.html"
+        >
+          <img src="../images/w3c-html.png" alt="html validator" />
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

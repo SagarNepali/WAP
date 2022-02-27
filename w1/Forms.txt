@@ -1,0 +1,8 @@
+Hi, I am Sagar Nepali. In my undergraduate, I studied Web Technology in my fourth semester (2013). 
+After my undergraduate, I was working as a java developer and had to modify the JSP as and when required. 
+In those periods, I have been able to be aware of Web servers, clients, servers, javascript, jquery, ajax,
+http, REST, JSP and many more web related contents.
+
+-> I have used bootstrap for styling the form to the minimum. I have added cdn for bootstrap in the forms.html
+and did both the forms in same html page. On get action I redirected the page to success.html
+ Here's the link to the github: https://sagarnepali.github.io/WAP/forms/forms.html
