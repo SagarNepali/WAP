@@ -15,12 +15,12 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>Forms</title>
   </head>
   <body>
     <div class="form1 container">
       <div class="row col-6">
-        <fieldset style="bottom: black 1px">
+        <fieldset>
           <legend>Form1</legend>
           <form method="get" action="./success.html">
             <div class="form-group">
@@ -37,6 +37,20 @@
               <small id="emailHelp" class="form-text text-muted"
                 >We'll never share your email with anyone else.</small
               >
+            </div>
+            <div class="form-group">
+              <label for="url">URL</label>
+              <input
+                type="url"
+                class="form-control"
+                id="url"
+                aria-describedby="url"
+                placeholder="Enter URL"
+                name="url"
+                pattern="https?:\/\/.+"
+                oninvalid="this.setCustomValidity('Enter a url with http:\/\/ or https:\/\/')"
+                required
+              />
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
@@ -58,7 +72,7 @@
                 name="check_out"
                 id="check-out"
               />
-              <label class="form-check-label" for="exampleCheck1"
+              <label class="form-check-label" for="check-out"
                 >Check me out</label
               >
             </div>
@@ -123,6 +137,8 @@
               <label for="supplier">Supplier: </label>
               <select class="form-select">
                 <option selected>Select a supplier</option>
+                <option id="supplier">1</option>
+                <option id="supplier">12</option>
               </select>
             </div>
             <div class="form-group">
@@ -132,7 +148,6 @@
                 class="form-control"
                 id="date-supplied"
                 name="date_supplied"
-                placeholder="yyyy-mm-dd"
                 required
               />
               <small id="dateSuppledHelp" class="form-text text-muted"
