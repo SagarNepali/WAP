@@ -1,3 +1,10 @@
+var login = document.getElementById("loginSubmit");
+login.addEventListener("click", loginSubmit);
+
+document
+  .getElementById("productSubmit")
+  .addEventListener("click", productSubmit);
+
 function loginSubmit() {
   let loginObject = {
     email: document.getElementById("email").value,
