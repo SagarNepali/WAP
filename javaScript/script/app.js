@@ -163,3 +163,20 @@ function printFibo(n, a, b) {
 }
 
 printFibo(10, 0, 1);
+
+function display_date_time() {
+  var x = new Date();
+  var x1 = x.getFullYear() + 1 + "-" + x.getMonth() + "-" + x.getDay();
+  x1 = x1 + " " + x.getHours() + ":" + x.getMinutes() + ":" + x.getSeconds();
+  document.getElementById("demo").innerHTML = x1;
+  refreshDate();
+}
+
+function refreshDate() {
+  var refresh = 1000; // Refresh rate in milli seconds
+  var mytime = setTimeout("display_date_time()", refresh);
+}
+
+window.onload = () => {
+  display_date_time();
+};

@@ -1,0 +1,12 @@
+#demo {
+  color: red;
+  background-color: aqua;
+  border: 1px solid green;
+  text-align: center;
+  font-family: Orbitron;
+  font-size: 5vw;
+  font-weight: bold;
+  border-radius: 10px;
+  border-style: dashed;
+  text-shadow: 1px 1px 1px #000;
+}

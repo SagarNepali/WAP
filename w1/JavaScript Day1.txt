@@ -1,0 +1,10 @@
+Hi, I am Sagar Nepali. In my undergraduate, I studied Web Technology in my fourth semester (2013). 
+After my undergraduate, I was working as a java developer and had to modify the JSP as and when required. 
+In those periods, I have been able to be aware of Web servers, clients, servers, javascript, jquery, ajax,
+http, REST, JSP and many more web related contents.
+
+-> The problems were easy as we just covered functional programming from MPP as well. I used to struggle to understand
+the functional style of programming, as it was used so much in javascript codes. The JS timer took me some time 
+as I had to search for it in the internet  as well and added a font using googleapis to show the font as like in 
+digital clock
+ Here's the link to the github: https://sagarnepali.github.io/WAP/javascript/js.html
