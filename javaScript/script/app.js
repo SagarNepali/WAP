@@ -19,6 +19,8 @@ function maxOfThree(num1, num2, num3) {
     return num3;
   }
   return num2;
+
+  //return (a>b) ? ((a > c) ? a : c) : ((b > c ) ? b :c );
 }
 
 console.log("Q2:", maxOfThree(22, 51, 55));
@@ -87,6 +89,8 @@ function computeSumOfSquares(numbers) {
 
   numbers.filter((num) => (sum += Math.pow(num, 2)));
   return sum;
+
+  //return numbers.map(n => n * n).reduce((sum,n) => sum + n);
 }
 
 console.log("Q8: Sum Of Squares: ", computeSumOfSquares([1, 2, 3]));
@@ -112,6 +116,8 @@ function computeSumOfSquaresOfEvenOnly(nums) {
     }
   });
   return sumOfSquares;
+
+  // return nums.filter(n => n%2==0).map(a => a * a).reduce((sum,n) => sum+n);
 }
 
 console.log(
