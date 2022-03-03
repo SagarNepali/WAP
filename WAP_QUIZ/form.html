@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css"></link>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Registration Form</h1>
+      <span>Note : Field marked with asterisks (*) are required.</span>
+      <div id="boi-data-form">
+        <form>
+          <fieldset>
+            <legend>Bio Data</legend>
+            <label>Full Names *</label>
+            <br />
+            <input id="name" type="text" placeholder="Enter Full Names" required />
+            <br />
+            <label>Date of Birth *</label>
+            <br />
+            <input id="dob" type="date" required />
+          </fieldset>
+          <fieldset>
+            <legend>Academic Enrollment Data</legend>
+            <label>Student ID *</label>
+            <br />
+            <input id="id"type="text" placeholder="000-XX-XXXX" required />
+            <br />
+            <label>Level of study *</label>
+            <br />
+            <input type="radio" /> Graduate <input type="radio" /> UnderGraduate
+          </fieldset>
+          <div class="buttonGroup">
+            <button>Cancel</button>
+            <button>Reset</button>
+            <button>Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--container-->
+  </body>
+</html>
