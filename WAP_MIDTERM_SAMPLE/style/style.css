@@ -32,10 +32,10 @@
 }
 
 .footer {
-  position: relative;
-  height: 20px;
-  margin-top: 5%;
   background-color: lightgrey;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .footer .pull-right {
