@@ -1,0 +1,154 @@
+Q1:
+    c(8, 9, 10)
+        write(1);
+        write(8);
+        f(8, 9, 10);
+            b = a = 8
+            x = 5 Globally;
+        write(8); // the changed value of 'b'
+        x = 10 Globally
+    write(10);
+    write(10);
+Q2:
+    Global scope -> Is the outer most scope of the program to which ALL elements of the program can access;
+    Local Scope -> Is a limited scope by which variables and functions play within a certain boundaries, like a cage;
+Q3:
+    // Scope a
+    function XFunc () {
+        // Scope b
+        function YFunc () {
+            // Scope C
+        };
+    };
+
+    a) No, Scope B and C are bounded within the XFunc()
+    b) Yes, Scopes have can extend to Global in the outward scope chain
+    c) No, again for the same reason (a) wasn't, scope C is bounded to YFunc()
+    d) Yes, No outward scope chain limit
+    e) Yes.
+Q4:
+    x*x
+    x=9
+    first print 9*9
+    x=5;
+    second print 5*5
+Q5:
+    1 ( numbers other than zero are truthy)
+Q6:
+    let add = (function(){
+        let counter = 0;
+        function adder(){
+            counter++;
+        }
+        function reseter(){
+            counter = 0;
+        }
+        return{
+            increment: function(){
+                adder();
+            },
+            reset: function(){
+                reseter();
+            },
+            value: function(){
+                return counter;
+            }
+        }
+    })();
+Q7:
+    The free variable in the above closure is the 'counter' variable.
+    two criterias nested function, accessing outside variables.
+Q8:
+    function make_adder(x){
+        let counter = 1;
+        return function(){
+            counter += x;
+            console.log(counter);
+        };
+    }
+Q9:
+    making an object out the properties, if desired also place the
+    or the best solution would be to encapsulate them in a Closure.
+Q10:
+    let Employee = function(){
+        let name;
+        let age;
+        let salary;
+        function setA(x){
+            age = x;
+        }
+        function setN(n){
+            name = n;
+        }
+        function setS(sal){
+            salary = sal;
+        }
+        function salInc(per){
+            salary = getS * per/100;
+        }
+        function ageInc(){
+            age = getA + 1;
+        }
+        function getA(){
+            return age;
+        }
+        function getS(){
+            return salary;
+        }
+        function getN(){
+            return name;
+        }
+        return{
+            setAge: setA,
+            setSalary: setS,
+            setName: setN,
+            increaseSalary: salInc, // uses private getSalary
+            incrementAge: ageInc    // uses private getAge
+        }
+    }
+Q11:
+    let Employee = function(){
+        let name;
+        let age;
+        let salary;
+        let address;
+        function setA(x){
+            age = x;
+        }
+        function setN(n){
+            name = n;
+        }
+        function setS(sal){
+            salary = sal;
+        }
+        function salInc(per){
+            salary = getS * per/100;
+        }
+        function ageInc(){
+            age = getA + 1;
+        }
+        function setAdd(ad){
+            address = ad;
+        }
+        function getA(){
+            return age;
+        }
+        function getS(){
+            return salary;
+        }
+        function getN(){
+            return name;
+        }
+        function getAdd(){
+            return address;
+        }
+        return{
+            setAge: setA,
+            setSalary: setS,
+            setName: setN,
+            increaseSalary: salInc, // uses private getSalary
+            incrementAge: ageInc,    // uses private getAge
+            setAddress: setAdd,
+            getAddress: getAdd
+        }
+    }

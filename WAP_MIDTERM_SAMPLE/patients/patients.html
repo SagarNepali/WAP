@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HolyCross Medical Center</title>
+    <link rel="stylesheet" href="../libs/_bootswatch.scss" />
+    <link rel="stylesheet" href="../libs/_variables.scss" />
+    <link rel="stylesheet" href="../libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body>
+    <div class="navbarArea">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">HolyCross Medical Center</a>
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../patients/patients.html"
+                  >Patients
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Nav Area-->
+    <main>
+      <div class="container">
+        <div class="row">
+          <h2>Patients Registration</h2>
+          <hr />
+          <form>
+            <div class="row">
+              <div class="row">
+                <div class="col-12">
+                  <label for="id">*Patient ID No: </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="id"
+                    placeholder="EP-XXX-XXXXXX"
+                    pattern="^(EP|P)-\d{3}-\d{6}"
+                    required
+                  />
+                  <small id="idHelp" class="form-text text-muted"
+                    >Enter the Patient ID Number, in the specified format</small
+                  >
+                </div>
+              </div>
+              <div class="row">
+              <div class="col-md-4">
+                <label for="firstName">*First Name: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  placeholder="Enter First Name"
+                  required
+                />
+                <small id="nameHelp" class="form-text text-muted"
+                  >Enter the Patient's first Name</small
+                >
+              </div>
+              <div class="col-md-4">
+                <label for="firstName">Middle Initial(s): </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="middleName"
+                  placeholder="Enter Middle Initial(s)"
+                  
+                />
+              </div>
+              <div class="col-md-4">
+                <label for="firstName">*Last Name: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  placeholder="Enter Last Name"
+                  required
+                />
+                <small id="lastNameHelp" class="form-text text-muted"
+                  >Enter the Patient's last Name</small
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="dob">*Date of Birth: </label>
+                <input
+                  type="date"
+                  class="form-control"
+                  id="dob"
+                  required
+                />
+                <small id="dobHelp" class="form-text text-muted"
+                  >Enter the Patient's Date of Birth</small
+                >
+              </div>
+              <div class="col-md-4">
+                <label for="dept">*Department: </label>
+                <select type="text" class="form-control" required id="dept">
+                  <option>Select..</option>
+                  <option>Cardiology</option>
+                  <option>Ear, Nose and Throat</option>
+                  <option>Primary Care</option>
+                  <option>[Unassigned]</option>
+                </select>
+                <small id="deptHelp" class="form-text text-muted"
+                  >Select the department providing care</small
+                >
+              </div>
+              <div class="col-md-4">
+                <label class="form-check-label" for="opd"
+                  >*Is this an Out-patient:
+                </label>
+                <br />
+                <input
+                  type="radio"
+                  id="yes"
+                  class="form-check-input"
+                  value="true"
+                  
+                />
+                <label for="yes">Yes</label>
+                <input
+                  type="radio"
+                  id="no"
+                  class="form-check-input"
+                  value="false"
+                />
+                <label for="no">No</label>
+              </div>
+            </div>
+            <div class="row"> 
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="reset" class="btn btn-secondary">Reset</button>
+                        <button type="submit" class="btn btn-primary">
+                          Register Patient
+                        </button>
+                      </div>
+                </div>
+                
+            </div>
+            
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <!-- Copyright -->
+      <div>
+        O.Kalu : : : CS472-WAP <span class="pull-right">HCMS © May 2020 </span>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+  </body>
+</html>

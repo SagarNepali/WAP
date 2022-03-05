@@ -1,0 +1,52 @@
+@media only screen and (min-width: 960px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 2em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid #f7f3f3;
+    border-left: 1px solid #f7f3f3;
+  }
+}
+
+#slogan {
+  font-weight: bold;
+  font-style: italic;
+  font-family: cursive;
+}
+
+.about-us {
+  text-align: justify;
+  display: block;
+}
+.addressInfo {
+  display: inline-block;
+}
+
+.addressLine {
+  list-style-type: none;
+  text-align: left;
+}
+
+.redFont {
+  color: red;
+}
+
+.footer {
+  position: relative;
+  height: 20px;
+  margin-top: 5%;
+  background-color: lightgrey;
+}
+
+.footer .pull-right {
+  float: right;
+}
+
+.blueAction {
+  text-decoration: underline;
+  color: blue;
+}
+
+.btn-group {
+  float: right;
+}
