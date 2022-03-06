@@ -1,0 +1,54 @@
+@media only screen and (min-width: 960px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 2em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 1px solid #f7f3f3;
+    border-left: 1px solid #f7f3f3;
+  }
+}
+
+img {
+  float: right;
+  margin: 5px;
+}
+
+.actual-content p {
+  color: grey;
+}
+.addressInfo {
+  display: inline-block;
+}
+
+.addressLine {
+  list-style-type: none;
+  text-align: left;
+}
+
+.redFont {
+  color: red;
+}
+
+.footer {
+  background-color: lightgrey;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.footer .pull-right {
+  float: right;
+}
+
+.blueAction {
+  text-decoration: underline;
+  color: blue;
+}
+
+.btn-group {
+  float: right;
+}
+
+.whiteFont {
+  color: white;
+}

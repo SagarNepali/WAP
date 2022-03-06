@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The South West - Regional Censes</title>
+    <link rel="stylesheet" href="./libs/_bootswatch.scss" />
+    <link rel="stylesheet" href="./libs/_variables.scss" />
+    <link rel="stylesheet" href="./libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <div class="navbarArea">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"
+            >The South West- Regional Census</a
+          >
+
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">
+                  Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./censusform.html">Census Form</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <div class="pull-right whiteFont">
+                Saturday, 5 march 2022 - 10:21:37 AM
+              </div>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Nav Area-->
+    <main>
+      <div class="container">
+        <div class="row">
+          <h2>Census Form</h2>
+          <hr />
+          <form  method="get" action="#">
+            <div class="row">
+              <div class="row">
+                <div class="col-12">
+                  <label for="fullName">*Full Name: </label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    placeholder="Enter your Full Name"
+                    
+                    required
+                  />
+                  <small id="fullNameHelp" class="form-text text-muted"
+                    >Enter your Full Name as printed on your Government-issued ID</small
+                  >
+                </div>
+              </div>
+              <div class="row">
+              <div class="col-md-6">
+                <label for="id">*Citizen ID: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="id"
+                  placeholder="XXXXXXXXXX"
+                  pattern="\d{10}"
+                  required
+                />
+                <small id="idelp" class="form-text text-muted"
+                  >Enter your  10-Digit Citizen ID</small
+                >
+              </div>
+              <div class="col-md-6">
+                <label for="ssn">*Social Security Number: </label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="ssn"
+                  placeholder="XXX-XX-XXXX"
+                  required
+                  pattern = "\d{3}-\d{2}-\d{4}"
+                    
+                  
+                />
+                <small id="ssnHelp" class="form-text text-muted"
+                  >Enter your  Social Security Number (in the format shown)</small
+                >
+              </div>
+            </div>
+            <div class="row">
+              
+              <div class="col-md-6">
+                <label for="state">*State: </label>
+                <select class="form-control" required id="state">
+                  <option>Select..</option>
+                  <optgroup label="SouthWest Region">
+                      <option>Arizona</option>
+                      <option>New Mexico</option>
+                      <option>Texas</option>
+                  </optgroup>
+                </select>
+                <small id="stateHelp" class="form-text text-muted"
+                  >Select your State of residence</small
+                >
+              </div>
+              <div class="col-md-6">
+                <label class="form-check-label" for="senior"
+                  >*Senior Citizen?
+                </label>
+                <br />
+                <input
+                  type="radio"
+                  
+                  class="form-check-input"
+                  value="Yes"
+                  name="senior"
+                  
+                />
+                <label for="yes">Yes</label>
+                <input
+                  type="radio"
+                  value="No"
+                  class="form-check-input"
+                  name="senior"
+                />
+                <label for="no">No</label>
+              </div>
+            </div>
+            <div class="row"> 
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3"></div>
+                <div class="col-3">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <button type="reset" id="reset" class="btn btn-secondary">Reset</button>
+                        <button type="submit" id="formSubmit" class="btn btn-primary">
+                          Submit
+                        </button>
+                      </div>
+                </div>
+                
+            </div>
+            
+          </form>
+        </div>
+      </div>
+      
+    </main>
+    <footer class="footer">
+        <!-- Copyright -->
+        <div>
+          Sagar Nepali : : : CS472-WAP
+          <span class="pull-right">© March 2022 </span>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+  </body>
+</html>
