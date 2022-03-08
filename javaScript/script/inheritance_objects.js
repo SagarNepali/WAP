@@ -50,11 +50,15 @@ console.log("Q3");
 function Person(name, dateOfBirth) {
   this.name = name;
   this.dateOfBirth = dateOfBirth;
+
+  this.toString = function () {
+    console.log("Name: " + this.name + " , DateOFBirth: " + this.dateOfBirth);
+  };
 }
 
-Person.prototype.toString = function () {
-  console.log("Name: " + this.name + " , DateOFBirth: " + this.dateOfBirth);
-};
+// Person.prototype.toString = function () {
+//   console.log("Name: " + this.name + " , DateOFBirth: " + this.dateOfBirth);
+// };
 
 const p = new Person("Peter", "November 10,1985");
 p.toString();
