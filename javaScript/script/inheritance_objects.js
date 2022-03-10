@@ -2,6 +2,8 @@
 
 "use strict";
 
+console.log("========LAB 9=============");
+
 //Q1
 let person = {
   name: null,
@@ -20,6 +22,11 @@ johnObj.dateOfBirth = new Date(1998, 11, 10);
 
 console.log("The person's name is " + johnObj.getName());
 console.log(johnObj.getName() + " was born on " + johnObj.dateOfBirth);
+console.log(
+  johnObj.getName() +
+    " was born on " +
+    new Intl.DateTimeFormat().format(johnObj.dateOfBirth)
+);
 
 console.log("Q2: ");
 
