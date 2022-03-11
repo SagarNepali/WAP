@@ -64,17 +64,25 @@ $(document).ready(function () {
 
   $("#chkShowOutPatients").click(function () {
     tableReset();
-    const elders = accounts.filter((account) => account.getOPD() === "Yes");
-    showInTable(elders);
+    if ($(this).is(":checked")) {
+      const elders = accounts.filter((account) => account.getOPD() === "Yes");
+      showInTable(elders);
+    } else {
+      refreshTable();
+    }
   });
 
-  $("#chkElderlyPatients").click(function () {
+  $("#chkElderlyPatients").change(function () {
     tableReset();
-    const today = new Date().getFullYear();
-    const elders = accounts.filter((account) => {
-      const dateOfBirth = new Date(account.getDOB()).getFullYear();
-      return today - dateOfBirth > 65 ? account : null;
-    });
-    showInTable(elders);
+    if ($(this).is(":checked")) {
+      const today = new Date().getFullYear();
+      const elders = accounts.filter((account) => {
+        const dateOfBirth = new Date(account.getDOB()).getFullYear();
+        return today - dateOfBirth > 65 ? account : null;
+      });
+      showInTable(elders);
+    } else {
+      refreshTable();
+    }
   });
 });
