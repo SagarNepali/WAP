@@ -17,6 +17,10 @@ export class Account {
     this.#opd = opd;
   }
 
+  getPatientId() {
+    return this.#patientId;
+  }
+
   getDepartment() {
     return this.#department;
   }

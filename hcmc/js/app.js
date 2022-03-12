@@ -49,10 +49,8 @@ $(document).ready(function () {
 
   function showInTable(accounts) {
     accounts.forEach((account) => {
-      let id = accounts.indexOf(account) + 1;
-
       $("#patientsTable > tbody").append(`<tr>
-          <td>${id}</td>
+          <td>${account.getPatientId()}</td>
           <td>${account.getFirstName()}</td>
           <td>${account.getMiddleInitial()}</td>
           <td>${account.getLastName()}</td>
